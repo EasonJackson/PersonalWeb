@@ -6,51 +6,306 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="custom.css" rel="stylesheet">
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+		<script>
+		window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')
+		</script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 		<title> Welcome </title>
-
 	</head>
 
 	<body>
 
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#AnotherSec"> Menu </a>
+		<nav class="navbar navbar-fixed-top" id="Home">
+			<div class="container-fluid">
+				<ul class="nav justify-content-left">
+					<li class="nav-item"><a class="nav-link"> Navigate in my home </a></li>
+					<li class="nav-item"><a class="nav-link" href="#Home" class="affix"> Home </a></li>
+					<li class="nav-item"><a class="nav-link" href="#Profile"> Profile </a></li>
+					<li class="nav-item"><a class="nav-link" href="#Experience"> Experience </a></li>
+					<li class="nav-item"><a class="nav-link" href="#Education"> Education </a></li>
+					<li class="nav-item"><a class="nav-link" href="#Project"> Project </a></li>
+					<li class="nav-item"><a class="nav-link" href="#Course"> Course </a></li>
+				</ul>
+			</div>
 		</nav>
 
-		<div class="row">
-			<div class="col-md-9" role="main">
-				<div class="container-fluid">
-					<p> Personal profile </p>
+		<main class="container-fluid">
+			<div class="col-md-12" role="main" id="Profile">
+				<div class="profile">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-2">
+								
+							</div>
+							<div class="col-md-3">
+								<p> Portforlio </p>
+								<img src="./assets/img/me.png" height="200px" width="160px">
+							</div>
+							<div class="col-md-6">
+								<p> Description </p>
+								<span> <img src=""><a href="https://github.com/EasonJackson">Check my github </a></span>
+								<span> <a href="https://www.linkedin.com/in/yi-pan-b495b858/"> More on Linkedin </a></span>
+							</div>
+						</div>
+					</div>
+					<p></p>
+				</div>
+				
+
+				<div class="container">
 					<div class="row">
-						<div class="col-md-3">
-							<p> Portforlio </p>
+						<div class="col-md-6">
+							<span>
+								<header> I can: </header>
+								<p><img src="./assets/img/skillset.png" height="280" width="350"></p>
+							</span>
 						</div>
 						<div class="col-md-6">
-							<p> Description </p>
+							<span>
+								<header> And I enjoy: </header>
+							</span>
 						</div>
 					</div>
 				</div>
+
+				<div class="container" id="Experience">
+					<header> Experience </header>
+					<span>
+						<ul>
+							<li><header> Software Developer </header></li>
+							<p> Worcester Polytechnic Institute</p>
+							<p class="date"> Jul 2016 - Sept 2017</p>
+						</ul>
+					</span>
+					<span>
+						<img src="./assets/img/FSW.jpg" height="300" width="450">
+						<ul>
+							<li> Designed and developed a material science simulation software with Java and Matlab, for modeling metal processing condition in friction stir welding.</li>
+							<li> Tested functions with JUnit, to validate the punctuality of simulation results.</li>
+						</ul>
+					</span>
+					<span>
+						<ul>
+							<li> <a href="http://easonsimulation.blogspot.com/2017/09/fsw-simulation.html">
+								Project Introduction
+							</a></li>
+						</ul>
+					</span>
+					<span>
+						<p><a href="#Home">Top</a></p>
+					</span>
+				</div>
 				
-				<div class = "container">
-					<p> Education </p>
+				<div class = "container" id="Education">
+					<header> Education </header>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">
+							<div class="row">
+								<div class="col-md-2">
+									<img src="./assets/img/WPI_logo.png" height="80px" width="80px">
+								</div>
+								<div class="col-md-8">
+									<p> M.S. in Data Science</p>
+									<p> Worcester Polytechnic Institute, Worcester, MA </p>
+									<p class="date"> Jan 2018 - Present </p>
+								</div>
+							</div>
+						</li>
+
+						<li class="list-group-item">
+							<div class="row">
+								<div class="col-md-2">
+									<img src="./assets/img/WPI_logo.png" height="80px" width="80px">
+								</div>
+								<div class="col-md-8">
+									<p> Ph.D. in Materials Science</p>
+									<p> Software Development and Computational Modeling, GPA: 3.9/4.0</p>
+									<p> Worcester Polytechnic Institute, Worcester, MA </p>
+									<p class="date"> Aug 2012 - Dec 2017 </p>
+								</div>
+							</div>
+						</li>
+
+						<li class="list-group-item">
+							<div class="row">
+								<div class="col-md-2">
+									<img src="./assets/img/Nanjing_University_Logo.png" height="80px" width="70px">
+								</div>
+								<div class="col-md-8">
+									<p> B.S. in Engineering </p>
+									<p> Nanjing University, China</p>
+									<p class="date"> Aug 2008 - Jun 2012 </p>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<span>
+						<p><a href="#Home">Top</a></p>
+					</span>
 				</div>
 
-				<div class="AnotherSec">
-					<p> Project </p>
+				<div class="container" id="Project">
+					<header> Project </header>
+					<div class="container">
+						<div class="card" style="width: 50rem;">
+							<img class="card-img-top" src="./assets/img/airlines_example.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">WPI Airline Reservation System</h5>
+								<p class="date"> Jan 2016 - May 2016 </p>
+								<p class="card-text">
+									<ul>
+										<li> Developed an online flight searching and reserving system.</li>
+										<li> Built a front-end server with NodeJS/Javascript, to support a non-blocking routing functionality for multiple client accesses. </li>
+										<li> Built a back-end RPC server with Java to implement a RESTful service.</li>
+										<li> Implemented a bidirectional search algorithm, with 80% decrease in searching time. </li>
+									</ul>
+								</p>
+								<a href="#" class="btn btn-primary">Ckect it!</a>
+						  </div>
+						</div>
+						
+						<span><img src="" id="FlightDemo"></span>
+						<span><img src="" id="FlightArch"></span>
+					</div>
+
+					<div class="container">
+						<div class="card" style="width: 50rem;">
+							<img class="card-img-top" src="./assets/img/rentSmart_example.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Rend Smart Search Engine</h5>
+								<p class="date"> May 2017 - Dec 2017 </p>
+								<p class="card-text">
+									<ul>
+										<li> Developed a web search engine for rental information in great Boston area, by city names, zip codes and street addresses and so on, with Java SpringBoot </li>
+										<li> Used collected information from Python web crawlers, RabbitMQ in a MongoDB, providing 30% increase in variety of search results.</li>
+										<li> Used TensorFlow as an offline machine learning tool to train the model for predicting rents in futures.</li>
+									</ul>
+								</p>
+								<a href="#" class="btn btn-primary">Ckect it!</a>
+						  </div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="card" style="width: 50rem;">
+							<img class="card-img-top" src="./assets/img/pokemon_example.png" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">PokemonGo Mini Radar</h5>
+								<p class="date"> Dec 2015 - Feb 2016 </p>
+								<p class="card-text">
+									<ul>
+										<li>Developed a website revealing and updating simulated Pokemon locations, types and remaining time with Javascript/HTML/Google map on the fly with Python crawler cluster fetching data at backend server.</li>
+										<li>Deployed the software with docker and AWS EBS on EC2 servers for mobile device accesses.</li>
+									</ul>
+								</p>
+								<a href="#" class="btn btn-primary">Ckect it!</a>
+						  </div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="card" style="width: 50rem;">
+							<img class="card-img-top" src="./assets/img/movie_example.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Movie Recommandar</h5>
+								<p class="date"> Oct 2015 - Jan 2016 </p>
+								<p class="card-text">
+									<ul>
+										<li>Employed page rank based movie recommendation algorithm with Hadoop to predict the relationship between collected websites and movie information.</li>
+										<li>Implemented a map-reducer with Java on a simulated multi-nodes environment to shuffle data and find the relationship and influence factors.</li>
+									</ul>
+								</p>
+								<a href="#" class="btn btn-primary">Ckect it!</a>
+						  </div>
+						</div>
+					</div>
+
+					<span>
+						<p><a href="#Home">Top</a></p>
+					</span>
+				</div>
+
+				<div class="container" id="Course">
+					<header> Courses </header>
+					<div>
+						<span> WPI </span>
+						<ul>
+							<li> Foundation of Computer Science</li>
+							<li> Design of Software System </li>
+							<li> Numerical Method in Computational Modeling</li>
+							<li> Relational Database Management System </li>
+							<li> Statistical Methods for Data Science </li>
+						</ul>
+					</div>
+
+					<div>
+						<span> Nanjing University </span>
+						<ul>
+							<li> C Language Programming </li>
+							<li> Operating System (Web) </li>
+							<li> Digital Circuits </li>
+						</ul>
+					</div>
+
+					<div>
+						<span> Udemy </span>
+						<ul>
+							<li> Learn and Understand NodeJS</li>
+							<li> Learn and Understand AngularJS</li>
+							<li> Learn Big Data: The Hadoop Ecosystem Masterclass</li>
+							<li> Multithreading and Parallel Computing in Java</li>
+							<li> Advanced Algorithms in Java </li>
+							<li> Spring and Hibernate for Biginners</li>
+							<li> The Complete Oracle SQL Certification Course </li>
+						</ul>
+					</div>
+
+					<div>
+						<span> Udacity </span>
+						<ul>
+							<li> Intro to Operating System </li>
+							<li> Compiler: Theory and Practice</li>
+						</ul>
+					</div>
+
+					<div>
+						<span> Mooc </span>
+						<ul>
+							<li> Linux Operating System </li>
+							<li> Software Design Patterns </li>
+							<li> Computer Organization </li>
+						</ul>
+					</div>
+
+					<div>
+						<span> Coursera </span>
+						<ul>
+							<li></li>
+						</ul>
+					</div>
+
+					<span>
+						<p><a href="#Home">Top</a></p>
+					</span>
 				</div>
 			</div>
-
-			<div class="col-md-3" role="sidenav">
-				<nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs affix">
-					<p> Side nav bar </p>
-				</nav>
-			</div>
-		</div>
-
+		</main>
 		
 
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<footer class="footer">
+			<div class="container-fluid">
+				<p class="text-muted" align="center"> Contact  Email: pyhanson@gmail.com  Tel: +1(774)-420-6228
+				<p align="center"> Yi Pan @2018 </p>
+			</div>
+		</footer>
+
+		
 	</body>
 </html>
