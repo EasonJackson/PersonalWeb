@@ -5,10 +5,12 @@
 		<meta charset="utf-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link href="custom.css" rel="stylesheet">
 
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 		<script>
 		window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')
@@ -16,7 +18,8 @@
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+		<script src="./assets/js/MDB_Free/js/mdb.js" type="text/javascript"></script>
+		<script src="./assets/js/app.js" type="text/javascript"></script>
 		<title> Welcome </title>
 	</head>
 
@@ -26,7 +29,7 @@
 			<div class="container-fluid">
 				<ul class="nav justify-content-left">
 					<li class="nav-item"><a class="nav-link"> Navigate in my home </a></li>
-					<li class="nav-item"><a class="nav-link" href="#Home" class="affix"> Home </a></li>
+					<li class="nav-item"><a class="nav-link" href="#Home"> Home </a></li>
 					<li class="nav-item"><a class="nav-link" href="#Profile"> Profile </a></li>
 					<li class="nav-item"><a class="nav-link" href="#Experience"> Experience </a></li>
 					<li class="nav-item"><a class="nav-link" href="#Education"> Education </a></li>
@@ -45,13 +48,31 @@
 								
 							</div>
 							<div class="col-md-3">
-								<p> Portforlio </p>
-								<img src="./assets/img/me.png" height="200px" width="160px">
+								<div class="container-fluid">
+									<img src="./assets/img/me2.png" height="200px" width="200px" id="myimage">
+								</div>
 							</div>
-							<div class="col-md-6">
-								<p> Description </p>
-								<span> <img src=""><a href="https://github.com/EasonJackson">Check my github </a></span>
-								<span> <a href="https://www.linkedin.com/in/yi-pan-b495b858/"> More on Linkedin </a></span>
+							<div class="col-md-7">
+								<header>
+									<p> Hello, my name is Yi Pan. </p>
+									<p> I am a full-stack developer. </p>
+								</header>
+								<div class="media">
+									<a href="https://github.com/EasonJackson">
+										<img class="mr-3" src="./assets/img/github.png" height="30px" width="30px">
+										<div class="media-body">
+										    <h5 class="mt-0">Check my Github</h5>
+										</div>
+									</a>
+								</div>
+								<div class="media">
+									<a href="https://www.linkedin.com/in/yi-pan-b495b858/"> 
+										<img class="mr-3" src="./assets/img/linkedin.png" height="30px" width="30px">
+										<div class="media-body">
+										    <h5 class="mt-0"> More on Linkedin </h5>
+										</div>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -61,44 +82,198 @@
 
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6">
-							<span>
-								<header> I can: </header>
-								<p><img src="./assets/img/skillset.png" height="280" width="350"></p>
-							</span>
-						</div>
-						<div class="col-md-6">
-							<span>
-								<header> And I enjoy: </header>
-							</span>
+						<div id="accordion">
+						  <div class="card">
+						    <div class="card-header" id="headingOne">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						          <header> I can programm: </header>
+						        </button>
+						      </h5>
+						    </div>
+
+						    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+						      <div class="card-body">
+					        	
+						        <ul>
+						        	
+						        	<li>
+						        		<div class="labels"> 
+						        			<!-- <span><img src="./assets/img/java_logo.svg" height="30px" width="50px"></span> -->
+						        			<span> Java </span> 
+						        		</div>
+					        			<div class="progress" data-amount="100">
+										  <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" width="50%" id="java"> </div>
+										</div>
+						        	</li>
+						        	<li> 
+						        		<div class="labels"> 
+						        			<!-- <span><img src="./assets/img/c_cpp_logo.png" height="30px" width="50px"></span> -->
+						        			<span> C/C++ </span> 
+						        		</div>
+					        			<div class="progress">
+										  <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" width="50%" id="cpp"> </div>
+										</div>
+						        	</li>
+						        	<li> 
+						        		<div class="labels"> 
+						        			<span> Python </span> 
+						        		</div>
+					        			<div class="progress">
+										  <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" width="50%" id="py"> </div>
+										</div>
+						        	</li>
+
+						        	<li> 
+						        		<div class="labels"> 
+						        			<span> Javascript/HTML/CSS </span> 
+						        		</div>
+					        			<div class="progress">
+										  <div class="progress-bar bg-success" role="progressbar" style="width: 55%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" width="50%" id="jhc"> </div>
+										</div>
+						        	</li>
+						        	<li> 
+						        		<div class="labels"> 
+						        			<span> SQL </span> 
+						        		</div>
+					        			<div class="progress">
+										  <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" width="50%" id="sql"> </div>
+										</div>
+						        	</li>
+						        	<li> 
+						        		<div class="labels"> 
+						        			<span> MATLAB </span> 
+						        		</div>
+					        			<div class="progress">
+										  <div class="progress-bar bg-success" role="progressbar" style="width: 60%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" width="50%" id="matlab"> </div>
+										</div>
+						        	</li>
+						        </ul>
+
+						        <div>
+						        	<canvas id="radarChart"></canvas>
+						        </div>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="card">
+						    <div class="card-header" id="headingTwo">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						          <header> I use: </header>
+						        </button>
+						      </h5>
+						    </div>
+						    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+						      <div class="card-body">
+						      	<div class="row">
+						      		<div class="col-md-2">
+						      			<img src="./assets/img/spring_framework.png" height="80">
+						      		</div>
+						      		<div class="col-md-4">
+						      			<img src="./assets/img/spring_boot_logo.png" height="80">
+						      		</div>
+						      		<div class="col-md-3">
+						      			<img src="./assets/img/mongodb_logo.png" height="80">
+						      		</div>
+						      		<div class="col-md-3">
+						      			<img src="./assets/img/bootstrap_logo.png" height="80">
+						      		</div>
+						      	</div>
+						      	<div class="row">
+						      		<div class="col-md-6">
+						      			<img src="./assets/img/nodejs_logo.png" height="80">
+						      		</div>
+						      		<div class="col-md-6">
+						      			<img src="./assets/img/docker_logo.png" height="80">
+						      		</div>
+						      	</div>
+						      	<div class="row">
+						      		<div class="col-md-6">
+						      			<img src="./assets/img/maven_logo.png" height="80">
+						      		</div>
+						      		<div class="col-md-3">
+						      			<img src="./assets/img/junit_logo.png" height="80">
+						      		</div>
+						      		<div class="col-md-3">
+						      			<img src="./assets/img/Version_control.png" height="80">
+						      		</div>
+						      	</div>
+						      	<div class="row">
+						      		<div class="col-md-6">
+						      			<img src="./assets/img/hadoop_logo.png" height="80">
+						      		</div>
+						      		<div class="col-md-6">
+						      			<img src="./assets/img/rabbitmq_logo.png" height="80">
+						      		</div>
+						      	</div>
+						      	<div class="row">
+						      		<div class="col-md-2">
+						      			<img src="./assets/img/Angular.png" height="80">
+						      		</div>
+						      		<div class="col-md-1">
+						      			<img src="./assets/img/postgresql_logo.png" height="80">
+						      		</div>
+						      		<div class="col-md-3">
+						      			<img src="./assets/img/mysql_logo.png" height="80">
+						      		</div>
+						      		<div class="col-md-6">
+						      			<img src="./assets/img/aws_ec2_logo.png" height="80">
+						      		</div>
+						      	</div>
+						      	<div class="row">
+						      		
+						      	</div>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="card">
+						    <div class="card-header" id="headingThree">
+						      <h5 class="mb-0">
+						        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						          <header> I enjoy: </header>
+						        </button>
+						      </h5>
+						    </div>
+						    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+						      <div class="card-body" align="center">
+						      	<img src="./assets/img/life1.jpg" height="100%">
+						      </div>
+						    </div>
+						  </div>
 						</div>
 					</div>
 				</div>
 
 				<div class="container" id="Experience">
 					<header> Experience </header>
-					<span>
-						<ul>
-							<li><header> Software Developer </header></li>
-							<p> Worcester Polytechnic Institute</p>
-							<p class="date"> Jul 2016 - Sept 2017</p>
-						</ul>
-					</span>
-					<span>
-						<img src="./assets/img/FSW.jpg" height="300" width="450">
-						<ul>
-							<li> Designed and developed a material science simulation software with Java and Matlab, for modeling metal processing condition in friction stir welding.</li>
-							<li> Tested functions with JUnit, to validate the punctuality of simulation results.</li>
-						</ul>
-					</span>
-					<span>
-						<ul>
-							<li> <a href="http://easonsimulation.blogspot.com/2017/09/fsw-simulation.html">
-								Project Introduction
-							</a></li>
-						</ul>
-					</span>
-					<span>
+					<div class="container">
+						<span>
+							<p>
+								<img src="./assets/img/FSW.jpg" height="300" width="450">
+							</p>
+							<ul>
+								<header> Software Developer </header>
+								<p> Worcester Polytechnic Institute - Graduate Research</p>
+								<p class="date"> Jul 2016 - Sept 2017</p>
+							</ul>
+						</span>
+						<span>
+							<ul>
+								<li> Designed and developed a material science simulation software with Java and Matlab, for modeling metal processing condition in friction stir welding.</li>
+								<li> Tested functions with JUnit, to validate the punctuality of simulation results.</li>
+							</ul>
+						</span>
+						<span>
+							<ul>
+								<li> <a href="http://easonsimulation.blogspot.com/2017/09/fsw-simulation.html">
+									Project Introduction
+								</a></li>
+							</ul>
+						</span>
+					</div>
+					
+					<span align="right">
 						<p><a href="#Home">Top</a></p>
 					</span>
 				</div>
@@ -108,7 +283,7 @@
 					<ul class="list-group list-group-flush">
 						<li class="list-group-item">
 							<div class="row">
-								<div class="col-md-2">
+								<div class="col-md-2" align="center">
 									<img src="./assets/img/WPI_logo.png" height="80px" width="80px">
 								</div>
 								<div class="col-md-8">
@@ -121,21 +296,41 @@
 
 						<li class="list-group-item">
 							<div class="row">
-								<div class="col-md-2">
+								<div class="col-md-2" align="center">
 									<img src="./assets/img/WPI_logo.png" height="80px" width="80px">
 								</div>
-								<div class="col-md-8">
+								<div class="col-md-6">
 									<p> Ph.D. in Materials Science</p>
 									<p> Software Development and Computational Modeling, GPA: 3.9/4.0</p>
 									<p> Worcester Polytechnic Institute, Worcester, MA </p>
 									<p class="date"> Aug 2012 - Dec 2017 </p>
+									<span>
+										<button type="button" id="Publications" class="btn btn-light" data-container="body" data-toggle="popover" data-placement="bottom" title="Publications"> Publications
+										</button>
+										<a class="btn btn-light" href="https://www.researchgate.net/profile/Yi_Pan17"> Research Gate
+										</a>
+									</span>
+									<div id="popover_content_publications" style="display: none">
+									  <div>
+									  	<p>1. Friction Stir Welding in Wrought and Cast Aluminum Alloys: Weld Quality Evaluation and Effects of Processing Parameters on Microstructure and Mechanical Properties.
+									  	</p>
+										<p class="date">Jan 2017 </p>
+										<p> Metallurgical and Materials Transactions A </p>
+										<p>2. Friction Stir Welding in Wrought and Cast Aluminum Alloys: Heat Transfer Modeling and Thermal History Analysis.
+										<p class="date">Dec 2016 </p>
+										<p> Metallurgical and Materials Transactions A</p>
+									  </div>
+									</div>
+									<div>
+										
+									</div>
 								</div>
 							</div>
 						</li>
 
 						<li class="list-group-item">
 							<div class="row">
-								<div class="col-md-2">
+								<div class="col-md-2" align="center">
 									<img src="./assets/img/Nanjing_University_Logo.png" height="80px" width="70px">
 								</div>
 								<div class="col-md-8">
@@ -146,7 +341,7 @@
 							</div>
 						</li>
 					</ul>
-					<span>
+					<span align="right">
 						<p><a href="#Home">Top</a></p>
 					</span>
 				</div>
@@ -227,7 +422,7 @@
 						</div>
 					</div>
 
-					<span>
+					<span align="right">
 						<p><a href="#Home">Top</a></p>
 					</span>
 				</div>
@@ -291,9 +486,13 @@
 						</ul>
 					</div>
 
-					<span>
+					<span align="right">
 						<p><a href="#Home">Top</a></p>
 					</span>
+				</div>
+
+				<div class="container" id="">
+					
 				</div>
 			</div>
 		</main>
