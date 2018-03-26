@@ -1,7 +1,21 @@
-This is my personal website.
+## This is my personal website.
 
-I study for full-stack web development, and I use js/html/css + bootstrap to build up the website as my e-resume.
+---
+Hi there, welcome to my site!
+
+My name is Yi, also can call me Eason.
+
+I study for full-stack web development, and I use Javascript/HTML/CSS with Bootstrap to build up the website as my e-resume. Here within the site I tried to wrap up some ideas of the project I have participated or accomplished.
+
+I love coding, for the time being have several years experience in Java, Python, C/C++, Matlab and some other computer languages development. 
+
+I enjoy the new challenges also from data science, machine learning and artificial intelligence. These are really awesome inspirations that how tech can change our world.
+
+I am always looking forward to learn new skills, meet with new people, and make great things happen.
 
 Hope you will like it!
 
-Yi @ 2018
+---
+
+## Author
+EasonJackson @ 2018
